@@ -1,0 +1,42 @@
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bubble {
+    z-index: -1;
+    border-radius: 50%;
+    will-change: transform;
+    pointer-events: none;
+
+    &--small {
+        @extend .bubble;
+        width: 60px;
+        height: 60px;
+    }
+
+    &--medium {
+        @extend .bubble;
+        width: 180px;
+        height: 180px;
+    }
+
+    &--large {
+        @extend .bubble;
+        width: 320px;
+        height: 320px;
+    }
+
+    &.animated {
+        animation: breathing 10s ease-in-out infinite;
+    }
+}

@@ -1,0 +1,55 @@
+@import 'http://resources.synerghetic.net/fonts/leitura/400_italic.css';
+@import 'http://resources.synerghetic.net/fonts/geomanist/400.500.700.css';
+
+.font-geomanist {
+    font-family: 'Geomanist';
+}
+
+.font-leitura {
+    font-family: 'Leitura';
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-s {
+    font-size: 12px;
+}
+
+.text-m {
+    font-size: 16px;
+}
+.text-l {
+    font-size: 28px;
+}
+
+.text-xl {
+    font-size: 52px;
+}
+
+.text-title {
+    @extend .font-leitura;
+    @extend .text-xl;
+    line-height: 52px;
+}
+
+.text-subtitle {
+    @extend .font-geomanist;
+    @extend .text-l;
+    line-height: 28px;
+}
+
+.text-current {
+    @extend .font-geomanist;
+    @extend .text-m;
+    line-height: 24px;
+}

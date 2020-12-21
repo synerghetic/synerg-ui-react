@@ -1,0 +1,60 @@
+{
+    "name": "@synerghetic/synerg-ui-react",
+    "version": "0.1.0",
+    "main": "dist/index.js",
+    "style": "dist/index.css",
+    "author": "Jules Guesnon <jules.guesnon@hetic.net>",
+    "license": "MIT",
+    "scripts": {
+        "storybook": "start-storybook -p 6006",
+        "build:storybook": "build-storybook",
+        "build": "webpack",
+        "test": "jest"
+    },
+    "jest": {
+        "setupFilesAfterEnv": [
+            "./src/config/setupTests.ts"
+        ]
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/synerghetic"
+    },
+    "dependencies": {
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-react": "^7.12.10",
+        "@babel/preset-typescript": "^7.12.7",
+        "@purtuga/esm-webpack-plugin": "^1.5.0",
+        "@rollup/plugin-typescript": "^8.1.0",
+        "@storybook/addon-actions": "^6.1.11",
+        "@storybook/addon-essentials": "^6.1.11",
+        "@storybook/addon-links": "^6.1.11",
+        "@storybook/preset-scss": "^1.0.3",
+        "@storybook/react": "^6.1.11",
+        "@types/enzyme": "^3.10.8",
+        "@types/jest": "^26.0.19",
+        "@types/react": "^17.0.0",
+        "@types/react-test-renderer": "^17.0.0",
+        "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+        "awesome-typescript-loader": "^5.2.1",
+        "babel-jest": "^26.6.3",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^5.0.1",
+        "enzyme": "^3.11.0",
+        "jest": "^26.6.3",
+        "jest-enzyme": "^7.1.2",
+        "rollup": "^2.35.1",
+        "rollup-plugin-scss": "^2.6.1",
+        "sass": "^1.30.0",
+        "sass-loader": "^10.1.0",
+        "style-loader": "^2.0.0",
+        "typescript": "^4.1.3"
+    }
+}

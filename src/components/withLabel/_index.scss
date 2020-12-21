@@ -1,0 +1,9 @@
+.input-with-label-container {
+    margin-top: 40px;
+}
+
+.label {
+    @extend .text-current;
+    @extend .font-bold;
+    margin-bottom: $small-margin-top;
+}

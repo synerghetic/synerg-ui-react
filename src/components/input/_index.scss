@@ -1,0 +1,40 @@
+$input-padding-side: 16px;
+
+.input-icon {
+    position: absolute;
+    right: $input-padding-side;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: $gray-400;
+
+    &--error {
+        @extend .input-icon;
+        fill: $red-500;
+    }
+}
+
+.input {
+    @extend.font-geomanist;
+    @extend .text-s;
+    width: calc(100% - 16px * 2);
+    border: 1px solid $gray-400;
+    border-radius: $border-radius;
+    color: $gray-500;
+    padding: 12px $input-padding-side;
+
+    &::placeholder {
+        color: $gray-400;
+    }
+
+    &--error {
+        @extend .input;
+        border: 1px solid $red-500;
+    }
+}
+
+.error-message {
+    @extend .font-geomanist;
+    @extend .text-s;
+    @extend .text-red-500;
+    margin-top: $small-margin-top;
+}

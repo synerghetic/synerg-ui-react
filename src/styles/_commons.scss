@@ -1,0 +1,34 @@
+.remove {
+    display: none;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex\:column {
+    @extend .flex;
+    flex-direction: column;
+}
+
+.relative {
+    position: relative;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+    .no-mobile {
+        display: none;
+    }
+}

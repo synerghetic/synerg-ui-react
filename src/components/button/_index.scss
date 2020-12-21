@@ -1,0 +1,21 @@
+.button {
+    @extend .font-geomanist;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    &--primary {
+        @extend .button;
+        @extend .bg-purple-500-hover;
+        @extend .text-white;
+    }
+}
