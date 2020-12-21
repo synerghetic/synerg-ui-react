@@ -1,4 +1,4 @@
-import IconComponent, { Icon as IconNames } from '.'
+import IconComponent, { Icons as IconNames } from '.'
 
 export const Icon = IconComponent
 
