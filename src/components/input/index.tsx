@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon, { Icon as IconNames } from '../icon'
+import Icon, { Icons as IconNames } from '../icon'
 
 export type Props = {
     onChange: (value: string) => void

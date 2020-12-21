@@ -11,7 +11,7 @@ export type Props = {
     showOnMobile: boolean
 }
 
-export default ({
+const Bubble = ({
     position = 'fixed',
     x,
     y,
@@ -27,3 +27,7 @@ export default ({
         style={{ position, left: `${x}px`, top: `${y}px` }}
     />
 )
+
+Bubble.Colors = Colors
+
+export default Bubble

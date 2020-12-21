@@ -11,7 +11,7 @@ export type Props = {
     onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
 
-export default ({
+const Button = ({
     children,
     onClick,
     className,
@@ -28,3 +28,7 @@ export default ({
         </button>
     )
 }
+
+Button.Appearance = Appearance
+
+export default Button
