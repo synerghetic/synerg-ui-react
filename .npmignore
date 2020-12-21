@@ -1,8 +1,0 @@
-src/**
-storybook-static/**
-.storybook/**
-.github/**
-node_modules/**
-.prettierrc
-rollup.config.js
-tsconfig.json
