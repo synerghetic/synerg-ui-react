@@ -2,7 +2,7 @@
 
 Some useful pre-styled components to create a tons of websites.
 
-## :fire: Install it
+## :zap: Install it
 
 ```bash
 npm i -s @synerghetic/synerg-ui-react
@@ -24,6 +24,6 @@ Then, import the needed components :
 import {Button, Input, ...} from '@synerghetic/synerg-ui-react'
 ```
 
-## :files: Component list
+## :card_file_box: Component list
 
 Too lazy to make it, so check out the [storybook](https://ui.synerghetic.net)
