@@ -1,12 +1,12 @@
 import React from 'react'
 import TitleComponent from '.'
-import { Colors, colorToClassName } from '../../utils'
+import { Colors, colorToTextClassName } from '../../utils'
 
 type args = { text: string; className: string; color: Colors }
 
 export const Title = ({ text, className, color }: args) => (
     <TitleComponent
-        className={(className ?? '').concat(` ${colorToClassName(color)}`)}
+        className={(className ?? '').concat(` ${colorToTextClassName(color)}`)}
     >
         {text}
     </TitleComponent>

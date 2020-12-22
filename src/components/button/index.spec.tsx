@@ -4,14 +4,14 @@ import { mount } from 'enzyme'
 
 describe('Button', () => {
     it('should render', () => {
-        const component = mount(<Button>Hello World</Button>)
+        const component = mount(<Button onClick={() => {}}>Hello World</Button>)
 
         expect(component.html()).toContain('button')
         expect(component.html()).toMatchSnapshot()
     })
 
     it('should have the primary class', () => {
-        const component = mount(<Button>Hello World</Button>)
+        const component = mount(<Button onClick={() => {}}>Hello World</Button>)
 
         expect(component.find('button')).toHaveClassName('button--primary')
     })
@@ -24,5 +24,15 @@ describe('Button', () => {
         component.simulate('click')
 
         expect(onClick.mock.calls.length).toBe(1)
+    })
+
+    it('should contain the loading element', () => {
+        const component = mount(
+            <Button onClick={() => {}} loading>
+                Hello World
+            </Button>,
+        )
+
+        expect(component).toContainMatchingElement('.loader')
     })
 })

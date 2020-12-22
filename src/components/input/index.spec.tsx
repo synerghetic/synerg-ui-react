@@ -27,6 +27,22 @@ describe('Input', () => {
         expect(value).toBe(changeValue)
     })
 
+    it('should call onChange and update the variable', () => {
+        const changeValue = 'Hello World'
+        let value = ''
+        const onEnterPressed = () => {
+            value = changeValue
+        }
+
+        const component = mount(
+            <Input onChange={() => {}} onEnterPressed={onEnterPressed} />,
+        )
+
+        component.find('input').simulate('keydown', { key: 'Enter' })
+
+        expect(value).toBe(changeValue)
+    })
+
     it('should have an error', () => {
         const error = 'Oh no D:'
 

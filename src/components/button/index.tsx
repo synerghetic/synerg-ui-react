@@ -1,4 +1,6 @@
 import React from 'react'
+import { Colors } from '../../utils'
+import Loader from '../loader'
 
 export enum Appearance {
     Primary = 'Primary',
@@ -6,9 +8,11 @@ export enum Appearance {
 
 export type Props = {
     children: string
+    onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
     appearance?: Appearance
     className?: string
-    onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
+    disabled?: boolean
+    loading?: boolean
 }
 
 const Button = ({
@@ -16,15 +20,27 @@ const Button = ({
     onClick,
     className,
     appearance = Appearance.Primary,
+    disabled = false,
+    loading = false,
 }: Props) => {
     return (
         <button
-            className={`button--${appearance.toLowerCase()} `.concat(
-                className ?? '',
-            )}
-            onClick={onClick}
+            className={`button--${appearance.toLowerCase()} ${
+                disabled ? 'disabled' : ''
+            } `.concat(className ?? '')}
+            onClick={e => {
+                if (!disabled) onClick(e)
+            }}
         >
-            {children}
+            <div className={`loader-container ${loading ? '' : 'hidden'}`}>
+                <Loader
+                    size={12}
+                    color={Colors.White}
+                    bgColor={Colors.Purple}
+                />
+            </div>
+
+            <span className={loading ? 'hidden' : ''}>{children}</span>
         </button>
     )
 }

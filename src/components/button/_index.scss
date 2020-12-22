@@ -1,9 +1,12 @@
 .button {
     @extend .font-geomanist;
+    position: relative;
     padding: 12px 24px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    will-change: opacity;
+    transition: opacity 0.3s ease-in-out;
 
     &:focus {
         outline: none;
@@ -18,4 +21,15 @@
         @extend .bg-purple-500-hover;
         @extend .text-white;
     }
+
+    &.disabled {
+        opacity: 0.7;
+    }
+}
+
+.loader-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

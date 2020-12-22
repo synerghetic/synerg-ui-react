@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button should render 1`] = `"<button class=\\"button--primary \\">Hello World</button>"`;
+exports[`Button should render 1`] = `"<button class=\\"button--primary  \\"><div class=\\"loader-container hidden\\"><div class=\\"loader\\" style=\\"width: 12px; height: 12px; border-top: 4px solid #fff; border-right: 4px solid #59089e; border-left: 4px solid #59089e; border-bottom: 4px solid #59089e;\\"></div></div><span class=\\"\\">Hello World</span></button>"`;

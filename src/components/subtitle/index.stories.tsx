@@ -1,6 +1,6 @@
 import React from 'react'
 import SubtitleComponent from '.'
-import { Colors, colorToClassName } from '../../utils'
+import { Colors, colorToTextClassName } from '../../utils'
 
 type args = {
     text: string
@@ -12,7 +12,7 @@ type args = {
 export const Subtitle = ({ text, className, color, uppercase }: args) => (
     <SubtitleComponent
         uppercase={uppercase}
-        className={(className ?? '').concat(` ${colorToClassName(color)}`)}
+        className={(className ?? '').concat(` ${colorToTextClassName(color)}`)}
     >
         {text}
     </SubtitleComponent>

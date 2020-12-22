@@ -7,10 +7,8 @@ type args = Props & {
     label: string
 }
 
-export const Button = ({ label, appearance, onClick }: args) => (
-    <ButtonComponent appearance={appearance} onClick={onClick}>
-        {label}
-    </ButtonComponent>
+export const Button = ({ label, ...rest }: args) => (
+    <ButtonComponent {...rest}>{label}</ButtonComponent>
 )
 
 export default {
@@ -29,5 +27,7 @@ export default {
             },
         },
         onClick: { action: 'onClick' },
+        disabled: { type: 'boolean' },
+        loading: { type: 'boolean' },
     },
 }
