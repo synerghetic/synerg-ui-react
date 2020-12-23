@@ -16,9 +16,6 @@
             "./src/config/setupTests.ts"
         ]
     },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/synerghetic"
-    },
     "dependencies": {
         "react": "^17.0.1",
         "react-dom": "^17.0.1"
