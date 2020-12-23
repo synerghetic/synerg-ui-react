@@ -11,8 +11,12 @@ export type Props = {
     font?: Font
 }
 
-export default ({ children, font = Font.Leitura, className = '' }: Props) => (
+const Title = ({ children, font = Font.Leitura, className = '' }: Props) => (
     <h1 className={`text-title font-${font.toLowerCase()} ${className}`}>
         {children}
     </h1>
 )
+
+Title.Font = Font
+
+export default Title
