@@ -1,13 +1,10 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 
 export type Props = {
-    children: string
-    uppercase?: boolean
+    children: ReactElement
     className?: string
 }
 
-export default ({ children, className = '', uppercase = false }: Props) => (
-    <p className={`text-current ${className}`}>
-        {uppercase ? children.toUpperCase() : children}
-    </p>
+export default ({ children, className = '' }: Props) => (
+    <p className={`text-current ${className}`}>{children}</p>
 )
