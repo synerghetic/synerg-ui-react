@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 
 export type Props = {
-    children: ReactElement
+    children: ReactElement | string
     className?: string
 }
 

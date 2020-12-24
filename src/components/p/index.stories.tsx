@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import PComponent from '.'
 
 type args = {
-    text: string
+    text: ReactElement | string
     className: string
 }
 
