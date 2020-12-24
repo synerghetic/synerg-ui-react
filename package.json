@@ -1,6 +1,6 @@
 {
     "name": "@synerghetic/synerg-ui-react",
-    "version": "0.2.4",
+    "version": "0.2.5",
     "main": "dist/index.js",
     "style": "dist/index.css",
     "author": "Jules Guesnon <jules.guesnon@hetic.net>",
