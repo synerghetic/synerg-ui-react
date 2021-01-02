@@ -28,6 +28,7 @@
 .text-m {
     font-size: 16px;
 }
+
 .text-l {
     font-size: 28px;
 }
@@ -51,4 +52,39 @@
     @extend .font-geomanist;
     @extend .text-m;
     line-height: 24px;
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+    .text-s {
+        font-size: 8px;
+    }
+
+    .text-m {
+        font-size: 12px;
+    }
+
+    .text-l {
+        font-size: 24px;
+    }
+
+    .text-xl {
+        font-size: 32px;
+    }
+
+    .text-title {
+        @extend .text-xl;
+        line-height: 32px;
+    }
+
+    .text-subtitle {
+        @extend .font-geomanist;
+        @extend .text-l;
+        line-height: 24px;
+    }
+
+    .text-current {
+        @extend .font-geomanist;
+        @extend .text-m;
+        line-height: 12px;
+    }
 }
