@@ -1,6 +1,6 @@
 {
     "name": "@synerghetic/synerg-ui-react",
-    "version": "0.2.8",
+    "version": "0.2.10",
     "main": "dist/index.js",
     "style": "dist/index.css",
     "author": "Jules Guesnon <jules.guesnon@hetic.net>",
@@ -9,8 +9,7 @@
         "storybook": "start-storybook -p 6006",
         "build:storybook": "build-storybook",
         "build": "rollup -c",
-        "test": "jest",
-        "publish": "npm run build && npm publish"
+        "test": "jest"
     },
     "jest": {
         "setupFilesAfterEnv": [
