@@ -72,19 +72,14 @@
     }
 
     .text-title {
-        @extend .text-xl;
         line-height: 32px;
     }
 
     .text-subtitle {
-        @extend .font-geomanist;
-        @extend .text-l;
         line-height: 24px;
     }
 
     .text-current {
-        @extend .font-geomanist;
-        @extend .text-m;
         line-height: 12px;
     }
 }
